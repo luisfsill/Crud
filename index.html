@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="utils.js"></script>
+		<title>Meu CRUD</title>
+	</head>
+
+	<body>
+		<div>
+			<h1>CRUD Fake</h1>
+			<input class="input" type="text" placeholder="Pesquisar..." onchange="filter()" autofocus>
+
+			<!-- Table -->
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Nome</th>
+						<th>Aniversário</th>
+						<th>Ação</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- DOM -->
+				</tbody>
+			</table>
+			<!-- End Table -->
+
+			<a class="btn" href="#" onclick="opening()">Cadastrar</a>
+			
+			<!-- Modal -->
+			<div class="modal">
+				<div class="modal-overlay" />
+				<div class="modal-content">
+					<h3 class="modal-title">Cadastrar pessoa</h3>
+					<label>Nome</label>
+					<input class="input" id="personName" type="text" placeholder="Digite um nome">
+					<label>Aniversário</label>
+					<input class="input" id="birthday" type="date">
+					<div class="modal-footer">
+						<button onclick="opening()" class="button">Cancelar</button>
+						<button onclick="register()" class="button button-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+
+		</div>
+	</body>
+</html>
